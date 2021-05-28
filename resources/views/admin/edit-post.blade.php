@@ -74,11 +74,16 @@
             <label for="exampleFormControltitle">family_govt_job</label>
             <input name="family_govt_job" type="text" class="form-control" id="exampleFormControltitle" value="{{ $post->family_govt_job }}">
           </div>
+           <div class="form-group">
+            <label for="exampleFormControltitle">Business Family Member</label>
+            <input name="b_f_m" type="text" class="form-control" id="exampleFormControltitle" value="{{ $post->b_f_m }}">
+          </div>
+         
 
        
 
           <div class="form-group">
-            <label>Select Tags</label><br>
+            <label>family member govt</label><br>
             <div class="form-control">
               @foreach($tags as $tag)
               <input type="checkbox" name="tag[]" value="{{ $tag->id }}"

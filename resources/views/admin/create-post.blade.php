@@ -47,10 +47,29 @@
           </div>
 
 
-          <div class="form-group">
+         <!--  <div class="form-group">
             <label for="exampleFormControltitle"> Blood_group</label>
             <input name="blood_group" type="text" class="form-control" id="exampleFormControltitle" placeholder="Enter blood_group" value="{{ old('blood_group') }}" required>
-          </div>
+          </div> -->
+
+             <div class="form-group">
+            <label for="exampleFormControltitle"> Blood_group</label>
+            
+               <select name="blood_group"  class="form-control form-control-lg" value="{{ old('blood_group') }}" required>
+              <option>A+</option>
+              <option>A-</option>
+              <option>B+</option>
+              <option>B-</option>
+              <option>O+</option>
+              <option>O-</option>
+              <option>AB+</option>
+              <option>AB-</option>
+               </select>
+          </div> 
+
+     
+
+
 
           <div class="form-group">
             <label for="exampleFormControltitle"> Profession</label>
@@ -80,7 +99,7 @@
           </div>
 
             <div class="form-group">
-              <label>Select Tags</label><br>
+              <label>Family Member Govt</label><br>
               <div class="form-control box">
                 @foreach($tags as $tag)
                 <label>
@@ -97,6 +116,18 @@
             <label for="exampleFormControlTextarea1">Family Govt Job Member</label>
             <textarea name="family_govt_job" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="family member info. " value="{{ old('family_govt_job') }}"></textarea>
           </div>
+
+     
+
+          <div class="form-group">
+            <label for="exampleFormControltitle"> Business Family Member</label>
+            
+               <select name="b_f_m"  class="form-control form-control-lg" value="{{ old('b_f_m') }}" required>
+              <option>Yes</option>
+              <option>No</option>
+           
+               </select>
+          </div> 
 
 
 

@@ -54,7 +54,8 @@ class AdminController extends Controller
         'designation'=>'required|max:255',
         'permanent_address'=>'required|max:255',
         'present_address'=>'required|max:255',
-        'fb_link'=>'required|max:255',      
+        'fb_link'=>'required|max:255', 
+        'b_f_m'=>'required|max:255',     
 
         'image'=>'image',
         'category_id'=>'required',
@@ -79,6 +80,8 @@ class AdminController extends Controller
         'permanent_address'=> $request->permanent_address,
         'present_address'=> $request->present_address,
         'fb_link'=> $request->fb_link,  
+        'b_f_m'=> $request->b_f_m, 
+        
           'image' => 'upload/post/' . $image_new_name,
           'category_id' => $request->category_id,
    
@@ -101,7 +104,8 @@ class AdminController extends Controller
           'designation'=>$request->designation,
           'permanent_address'=>$request->permanent_address,
           'present_address'=>$request->present_address,
-          'fb_link'=>$request->fb_link,
+          'fb_link'=>$request->fb_link, 
+          'b_f_m'=>$request->b_f_m,
 
 
           'category_id' => $request->category_id,
@@ -145,8 +149,8 @@ class AdminController extends Controller
         'designation'=>'required',
         'permanent_address'=>'required',
         'present_address'=>'required',
-        'fb_link'=>'required',
-
+        'fb_link'=>'required', 
+        'b_f_m'=>'required',
         'category_id' => 'required',
         'family_govt_job' => 'required'
       ]);

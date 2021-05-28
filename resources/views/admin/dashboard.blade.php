@@ -57,15 +57,16 @@
                             <th>Profile Img</th>
                             <th>Category</th>                            
                             <th>Mobile</th>
-                            <!-- <th>date_of_birth</th>
-                            <th>Blood_group</th> -->
-                            <!-- <th>Profession</th>
+                             <th>date_of_birth</th>
+                            <th>Blood_group</th> 
+                            <th>Profession</th>
                             <th>Designation</th>
                             <th>Permanent Address</th>
                             <th>Present Address</th>
                             <th>Facebook Link</th>
-                            <th> Family Govt Job Member</th> -->
-                            <th>Select Tags</th>
+                            <th> job holder name & designation </th> 
+                            <th> Business Family Member</th> 
+                            <th>family member govt</th>
                          
                             <th>View & Edit</th>
                             <th>Trashed</th>
@@ -87,14 +88,15 @@
 
                                 <td>{{ $post->category->name }}</td>
                                 <td>{{ $post->mobile }}</td>
-                                <!-- <td>{{ $post->date_of_birth }}</td>
-                                <td>{{ $post->blood_group }}</td> -->
-                                <!-- <td>{{ $post->profession }}</td>
+                                <td>{{ $post->date_of_birth }}</td>
+                                <td>{{ $post->blood_group }}</td> 
+                                 <td>{{ $post->profession }}</td>
                                 <td>{{ $post->designation }}</td>
                                 <td>{{ $post->permanent_address }}</td>
                                 <td>{{ $post->present_address }}</td>
                                 <td>{{ $post->fb_link }}</td>
-                                <td>{{ $post->family_govt_job }}</td> -->
+                                <td>{{ $post->family_govt_job }}</td>
+                                <td>{{ $post->b_f_m }}</td> 
                                
                                 <td>
                                   @foreach($tags as $tag)

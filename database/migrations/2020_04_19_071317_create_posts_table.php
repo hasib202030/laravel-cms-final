@@ -33,6 +33,7 @@ class CreatePostsTable extends Migration
             $table->string('present_address');
             $table->string('fb_link'); 
             $table->string('mobile');
+            $table->string('b_f_m');
             $table->text('family_govt_job');
 
             $table->integer('category_id'); 
